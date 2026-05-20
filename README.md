@@ -11,8 +11,8 @@
 ├── 附录.md                    # 全书附录（术语表 / 安装指南 / 国内平台 / 完整技能）
 ├── 术语表.md                  # 英文术语与中文译名对照
 ├── chapters-illutrations/    # 各章配图、提示词、未采用的备选稿
-├── skill-templates/          # 第 5 章写作流水线的简化技能模板
-├── skills/                   # 完整可用的技能（含生成本书插图的那个）
+├── skill-templates/          # 第 5 章写作工作流的简化技能模板
+├── skills/                   # 完整可用的技能（含生成本书插图的技能）
 ├── examples/                 # 章节示例代码与数据
 ├── campaign-data-2025-01.csv # 第 7 章数据分析示例用的样本数据
 └── 【试读】….pdf              # 试读样章
@@ -26,10 +26,10 @@
 
 | 编号 | 内容 | 说明 |
 | --- | --- | --- |
-| 附录 A | 术语表 | 全书核心术语中英对照，标注首次出现章节 |
+| 附录 A | 术语表 | 全书核心术语中英对照 |
 | 附录 B | 各平台技能安装指南 | Claude.ai、Claude Code、VS Code、OpenCode 等 |
 | 附录 C | 国内模型 API 平台与部署方案 | 百炼、Kimi、智谱、DeepSeek、火山方舟 + OpenClaw 一键部署 |
-| 附录 D | 写作流水线真实技能参考 | 作者日常在用的四个完整技能 SKILL.md |
+| 附录 D | 写作工作流及访谈整理工作流完整版技能参考 | 作者日常在用的四个完整技能 SKILL.md |
 
 平台和命令会随时间变化，以这里的在线版为准。
 
@@ -44,7 +44,7 @@
 
 提示词文件开头以注释形式标注了配图在书中的位置和布局类型，方便对照阅读。这部分也可以当作 **"提示词怎么写"** 的样本库来翻。
 
-### 3. 写作流水线技能模板（[`skill-templates/`](./skill-templates/)）
+### 3. 写作工作流技能模板（[`skill-templates/`](./skill-templates/)）
 
 第 5 章介绍的简化版技能，可以直接复制到自己的技能目录使用：
 
@@ -82,7 +82,7 @@
 - **看书时遇到附录引用** → 直接看 [`附录.md`](./附录.md)，平台和 API 信息以这里为准。
 - **遇到不熟悉的英文术语** → 查 [`术语表.md`](./术语表.md) 对应的中文译名。
 - **想抄一份配图提示词** → 去 [`chapters-illutrations/`](./chapters-illutrations/) 对应章节的 `prompts/`。
-- **想搭一条写作流水线** → 从 [`skill-templates/`](./skill-templates/) 起步，对照附录 D 的完整版迭代。
+- **想搭一条写作工作流** → 从 [`skill-templates/`](./skill-templates/) 起步，对照附录 D 的完整版迭代。
 - **想给自己的文章批量配图** → 装上 [`skills/article-illustrator`](./skills/article-illustrator/)。
 - **想看一个技能怎么演化** → 翻 [`examples/chapter-07/`](./examples/chapter-07/) 的 v1/v2/v3。
 
