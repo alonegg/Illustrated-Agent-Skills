@@ -4,7 +4,7 @@
     {
       "id": "03-hammer-nails",
       "promptFiles": [
-        "../../.claude/skills/article-illustrator/prompts/system.md",
+        "../../.claude/skills/book-illustrator/prompts/system.md",
         "prompts/03-hammer-nails.md"
       ],
       "image": "imgs/03-hammer-nails.webp",
@@ -14,7 +14,7 @@
     {
       "id": "04-three-operations",
       "promptFiles": [
-        "../../.claude/skills/article-illustrator/prompts/system.md",
+        "../../.claude/skills/book-illustrator/prompts/system.md",
         "prompts/04-three-operations.md"
       ],
       "image": "imgs/04-three-operations.webp",
@@ -24,7 +24,7 @@
     {
       "id": "05-three-traps",
       "promptFiles": [
-        "../../.claude/skills/article-illustrator/prompts/system.md",
+        "../../.claude/skills/book-illustrator/prompts/system.md",
         "prompts/05-three-traps.md"
       ],
       "image": "imgs/05-three-traps.webp",
@@ -34,7 +34,7 @@
     {
       "id": "06-skill-decision",
       "promptFiles": [
-        "../../.claude/skills/article-illustrator/prompts/system.md",
+        "../../.claude/skills/book-illustrator/prompts/system.md",
         "prompts/06-skill-decision.md"
       ],
       "image": "imgs/06-skill-decision.webp",
@@ -44,7 +44,7 @@
     {
       "id": "07-model-vs-script",
       "promptFiles": [
-        "../../.claude/skills/article-illustrator/prompts/system.md",
+        "../../.claude/skills/book-illustrator/prompts/system.md",
         "prompts/07-model-vs-script.md"
       ],
       "image": "imgs/07-model-vs-script.webp",
@@ -54,7 +54,7 @@
     {
       "id": "09-three-strategies",
       "promptFiles": [
-        "../../.claude/skills/article-illustrator/prompts/system.md",
+        "../../.claude/skills/book-illustrator/prompts/system.md",
         "prompts/09-three-strategies.md"
       ],
       "image": "imgs/09-three-strategies.webp",
@@ -64,7 +64,7 @@
     {
       "id": "10-tools-vs-skills",
       "promptFiles": [
-        "../../.claude/skills/article-illustrator/prompts/system.md",
+        "../../.claude/skills/book-illustrator/prompts/system.md",
         "prompts/10-tools-vs-skills.md"
       ],
       "image": "imgs/10-tools-vs-skills.webp",

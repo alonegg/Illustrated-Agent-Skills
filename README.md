@@ -70,11 +70,28 @@
 
 可直接安装使用的完整技能。目前包含：
 
-- [`article-illustrator/`](./skills/article-illustrator/) — **本书所有插图就是用这个技能生成的**。一次性分析全文、批量识别配图位置、subagent 并行出图、自动回写文章。带 `references/design-system.md`（出版三色调色板、对比规则、反 AI 俗套禁用清单等）和 `prompts/` 子目录。
+- [`book-illustrator/`](./skills/book-illustrator/) — **本书所有插图就是用这个技能生成的**。专注于《图解 Skill —— AI 提效实战指南》的章节/附录书稿，一次性分析整篇书稿、批量识别配图位置、subagent 并行出图、自动回写书稿。带 `references/design-system.md`（出版三色调色板、对比规则、反 AI 俗套禁用清单等）和 `prompts/` 子目录。
 
 安装方法见 [附录 B](./附录.md#附录-b-各平台技能安装指南)。
 
-### 5. 章节示例（[`examples/`](./examples/)）
+### 5. 开源技能集（[`baoyu-skills`](https://github.com/JimLiu/baoyu-skills/blob/main/README.zh.md)）
+
+如果想直接使用作者日常维护的通用技能集，可以看开源仓库 [`JimLiu/baoyu-skills`](https://github.com/JimLiu/baoyu-skills)。这是宝玉分享的 AI Agent 技能集，适用于 Claude Code、Codex 等 Agent，覆盖内容生成、AI 生成后端和日常效率工具三类场景。
+
+当前仓库已收录 20+ 个 skill。不要一次性安装全部 skills：每个启用的 skill 都会占用 Agent 的上下文，装得越多，日常调用越容易变慢、变乱。建议先看完整清单，只挑当前工作流真正会用到的几个安装。
+
+
+```bash
+# 快速安装
+npx skills add jimliu/baoyu-skills
+
+# 或注册为 Codex / Claude Code 插件市场
+/plugin marketplace add JimLiu/baoyu-skills
+```
+
+其中包含文章配图、信息图、图表、封面图、幻灯片、知识漫画、Markdown 转 HTML、翻译、YouTube 字幕提取、图片压缩、发布到微信公众号 / 微博 / X 等技能。完整清单和每个技能的用法见 [`README.zh.md`](https://github.com/JimLiu/baoyu-skills/blob/main/README.zh.md)。
+
+### 6. 章节示例（[`examples/`](./examples/)）
 
 书中演示用到的代码、数据与产出。
 
@@ -88,7 +105,8 @@
 - **遇到不熟悉的英文术语** → 查 [`术语表.md`](./术语表.md) 对应的中文译名。
 - **想抄一份配图提示词** → 去 [`chapters-illutrations/`](./chapters-illutrations/) 对应章节的 `prompts/`。
 - **想搭一条写作工作流** → 从 [`skill-templates/`](./skill-templates/) 起步，对照附录 D 的完整版迭代。
-- **想给自己的文章批量配图** → 装上 [`skills/article-illustrator`](./skills/article-illustrator/)。
+- **想为本书补图、重画或批量生成章节插图** → 装上 [`skills/book-illustrator`](./skills/book-illustrator/)。
+- **想安装作者开源的通用技能集** → 看 [`baoyu-skills`](https://github.com/JimLiu/baoyu-skills/blob/main/README.zh.md)，按需安装少数真正会用到的 skills，不建议一次性全装。
 - **想看一个技能怎么演化** → 翻 [`examples/chapter-07/`](./examples/chapter-07/) 的 v1/v2/v3。
 
 ## 关于本书
