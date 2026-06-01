@@ -63,7 +63,7 @@ description: 生成中文周报（Markdown 表格格式）。当用户提到"周
 
 ## 文件保存
 
-保存为 `weekly-report-YYYY-MM-DD.md`，日期用当天日期。文件保存在当前工作目录下。
+保存为 `weekly-reports/weekly-report-YYYY-MM-DD-<序号>.md`，日期用当天日期。文件保存在当前工作目录下。
 
 如果当前目录下已经存在同名文件，提醒用户是否覆盖。
 
