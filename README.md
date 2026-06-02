@@ -71,6 +71,10 @@
 可直接安装使用的完整技能。目前包含：
 
 - [`book-illustrator/`](./skills/book-illustrator/) — **本书所有插图就是用这个技能生成的**。专注于《图解 Skill —— AI 提效实战指南》的章节/附录书稿，一次性分析整篇书稿、批量识别配图位置、subagent 并行出图、自动回写书稿。带 `references/design-system.md`（出版三色调色板、对比规则、反 AI 俗套禁用清单等）和 `prompts/` 子目录。
+- [`content-analyzer/`](./skills/content-analyzer/) — 素材深度分析技能。支持文章、推文、视频文稿等多种内容类型，用于理解核心观点与论证逻辑、批判性评估、提取写作素材、分析传播价值。
+- [`interview-analysis/`](./skills/interview-analysis/) — 访谈内容分析技能。将播客/视频访谈转化为结构化写作素材包和提纲，提取高价值信息点、金句与待验证背景。
+- [`interview-writing/`](./skills/interview-writing/) — 访谈实录写作技能。将访谈分析素材转化为正式文章，保留问答对话感，补充背景解读，适合在完成访谈分析后使用。
+- [`outliner/`](./skills/outliner/) — 科技专栏提纲生成技能。根据用户提供的素材生成 3–5 个差异化大纲方案（优先包含故事驱动型），每个方案保存独立文件供选择。
 
 安装方法见 [附录 B](./附录.md#附录-b-各平台技能安装指南)。
 
