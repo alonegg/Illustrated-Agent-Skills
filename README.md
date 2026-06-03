@@ -2,8 +2,8 @@
 
 <img width="500" height="500" alt="66915（立体）" src="https://github.com/user-attachments/assets/6caef6a2-6f11-490e-a43b-e810df8e9354" />
 
-京东购买链接：https://u.jd.com/RDY9YwC
-
+- 京东购买链接：https://u.jd.com/RDY9YwC
+- 电子书购买链接：https://www.ituring.com.cn/book/3616
 
 本仓库是图书 **《图解 Skill —— AI 提效实战指南》**（作者：[宝玉](https://github.com/JimLiu)）的配套资源。书里因为篇幅放不下、或者更适合在线查阅的内容都收在这里：附录全文、各章配图与对应提示词、写作工作流技能完整版、章节示例代码与数据、以及生成本书插图所用的技能本身。
 
