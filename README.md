@@ -5,7 +5,9 @@
 - 京东购买链接：https://u.jd.com/RDY9YwC
 - 电子书购买链接：https://www.ituring.com.cn/book/3616
 
-本仓库是图书 **《图解 Skill —— AI 提效实战指南》**（作者：[宝玉](https://github.com/JimLiu)）的配套资源。书里因为篇幅放不下、或者更适合在线查阅的内容都收在这里：附录全文、各章配图与对应提示词、写作工作流技能完整版、章节示例代码与数据、以及生成本书插图所用的技能本身。
+本仓库是图书 **《图解 Skill —— AI 提效实战指南》**（作者：[宝玉](https://github.com/JimLiu)）的配套资源。书里因为篇幅放不下、或者更适合在线查阅的内容都收在这里：附录全文、写作工作流技能完整版、章节示例代码与数据、以及生成本书插图所用的技能本身。
+
+各章配图与对应提示词因体积较大，已移至归档分支：[`archive-chapters-illutrations/chapters-illutrations`](https://github.com/JimLiu/Illustrated-Agent-Skills/tree/archive-chapters-illutrations/chapters-illutrations)。
 
 > 试读样章见仓库根目录的 [`【试读】图解Skill（前言+目录+第1章部分+第4章部分）.pdf`](./【试读】图解Skill（前言+目录+第1章部分+第4章部分）.pdf)。
 
@@ -15,7 +17,6 @@
 .
 ├── 附录.md                    # 全书附录（术语表 / 安装指南 / 国内平台 / 完整技能）
 ├── 术语表.md                  # 英文术语与中文译名对照
-├── chapters-illutrations/    # 各章配图、提示词、未采用的备选稿
 ├── skill-templates/          # 第 5 章写作工作流的简化技能模板
 ├── skills/                   # 完整可用的技能（含生成本书插图的技能）
 ├── examples/                 # 章节示例代码与数据
@@ -38,9 +39,11 @@
 
 平台和命令会随时间变化，以这里的在线版为准。
 
-### 2. 章节配图与提示词（[`chapters-illutrations/`](./chapters-illutrations/)）
+### 2. 章节配图与提示词（归档分支）
 
-按章节组织（`preface` 至 `chapter-07`）。每个章节目录下：
+这部分内容体积较大，已从 `main` 移到归档分支：[`archive-chapters-illutrations/chapters-illutrations`](https://github.com/JimLiu/Illustrated-Agent-Skills/tree/archive-chapters-illutrations/chapters-illutrations)。
+
+归档分支中仍按章节组织（`preface` 至 `chapter-07`）。每个章节目录下：
 
 - `imgs/` — 书中最终采用的配图（`.webp` / `.png`）
 - `prompts/` — 每张配图对应的生成提示词，文件名与图片一一对应
@@ -86,6 +89,8 @@
 
 当前仓库已收录 20+ 个 skill。不要一次性安装全部 skills：每个启用的 skill 都会占用 Agent 的上下文，装得越多，日常调用越容易变慢、变乱。建议先看完整清单，只挑当前工作流真正会用到的几个安装。
 
+另一个新写的设计技能是 [`jimliu/baoyu-design`](https://github.com/jimliu/baoyu-design)。它把 Claude Design 的设计方法封装成可在 Cursor、Claude Code、Codex 等本地 Agent 中使用的 Skill，用来生成高保真 UI mockup、交互原型、线框图、落地页、仪表盘、移动端界面和幻灯片，产物是可本地预览、可版本管理的自包含 HTML。
+
 
 ```bash
 # 快速安装
@@ -109,10 +114,11 @@ npx skills add jimliu/baoyu-skills
 
 - **看书时遇到附录引用** → 直接看 [`附录.md`](./附录.md)，平台和 API 信息以这里为准。
 - **遇到不熟悉的英文术语** → 查 [`术语表.md`](./术语表.md) 对应的中文译名。
-- **想抄一份配图提示词** → 去 [`chapters-illutrations/`](./chapters-illutrations/) 对应章节的 `prompts/`。
+- **想抄一份配图提示词** → 去归档分支 [`archive-chapters-illutrations/chapters-illutrations`](https://github.com/JimLiu/Illustrated-Agent-Skills/tree/archive-chapters-illutrations/chapters-illutrations) 对应章节的 `prompts/`。
 - **想搭一条写作工作流** → 从 [`skill-templates/`](./skill-templates/) 起步，对照附录 D 的完整版迭代。
 - **想为本书补图、重画或批量生成章节插图** → 装上 [`skills/book-illustrator`](./skills/book-illustrator/)。
 - **想安装作者开源的通用技能集** → 看 [`baoyu-skills`](https://github.com/JimLiu/baoyu-skills/blob/main/README.zh.md)，按需安装少数真正会用到的 skills，不建议一次性全装。
+- **想在本地 Agent 里做 UI / 产品设计** → 看 [`baoyu-design`](https://github.com/jimliu/baoyu-design)，用 Skill 生成 mockup、原型、线框图、幻灯片等自包含 HTML 设计稿。
 - **想看一个技能怎么演化** → 翻 [`examples/chapter-07/`](./examples/chapter-07/) 的 v1/v2/v3。
 
 ## 关于本书
